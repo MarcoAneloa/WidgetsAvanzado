@@ -1,7 +1,11 @@
 package com.aneloa.widgetsavanzado;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+
+import com.aneloa.widgetsavanzado.view.CreateAccountActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -11,7 +15,8 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
     }
 
-    public void goCreateAccount(){
-
+    public void goCreateAccount(View view){
+        Intent intent=new Intent(LoginActivity.this,CreateAccountActivity.class);
+        startActivity(intent);
     }
 }
