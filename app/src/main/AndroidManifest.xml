@@ -15,15 +15,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.CreateAccountActivity"
-            android:parentActivityName=".LoginActivity"><!--para hacer elboton de regreso-->
-            <meta-data android:name="android.support.PARENT_ACTIVITY"
-                       android:value=".LoginActivity"/>
+        <activity
+            android:name=".view.CreateAccountActivity"
+            android:parentActivityName=".LoginActivity">
+            <!-- para hacer elboton de regreso -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LoginActivity" />
         </activity>
         <activity
             android:name=".ReferenciaActivity"
             android:label="@string/title_activity_referencia"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".view.ConteinerActivity"></activity>
     </application>
 
 </manifest>
