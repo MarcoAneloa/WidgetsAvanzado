@@ -32,8 +32,8 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view=inflater.inflate(R.layout.fragment_home, container, false);
-        showToolbar("Home",false,view);
+        /*View view=inflater.inflate(R.layout.fragment_home, container, false);
+        //showToolbar("Home",false,view);
         RecyclerView picturesRecycler= (RecyclerView) view.findViewById(R.id.pictureRecycler);
 
         LinearLayoutManager linearLayoutManager= new LinearLayoutManager(getContext());
@@ -42,14 +42,14 @@ public class HomeFragment extends Fragment {
         picturesRecycler.setLayoutManager(linearLayoutManager);
 
         PictureAdapterRecyclerView pictureAdapterRecyclerView=new PictureAdapterRecyclerView(buidPictures(),R.layout.cardview_picture,getActivity());
-        picturesRecycler.setAdapter(pictureAdapterRecyclerView);
-        return view;
+        picturesRecycler.setAdapter(pictureAdapterRecyclerView);*/
+        return inflater.inflate(R.layout.fragment_home, container, false);
     }
 
     public ArrayList<Picture> buidPictures(){
         ArrayList<Picture> pictures= new ArrayList<>();
         pictures.add(new Picture("http://www.novalandtours.com/images/guide/guilin.jpg","Marco Aneloa","4 dias","3"));
-        pictures.add(new Picture("https://www.google.com.ec/search?q=imagenes+de+naruto&espv=2&tbm=isch&tbo=u&source=univ&sa=X&ved=0ahUKEwjfpdary6XTAhVEbiYKHaiBC88QsAQIIA&biw=1366&bih=613&dpr=1#imgrc=_fkU-GQjmB8UPM:","Juan Pablo","3 dias","10"));
+        pictures.add(new Picture("http://www.novalandtours.com/images/guide/guilin.jpg","Juan Pablo","3 dias","10"));
         pictures.add(new Picture("http://www.novalandtours.com/images/guide/guilin.jpg","Ximena Mangia","4 dias","15"));
         return pictures;
     }
